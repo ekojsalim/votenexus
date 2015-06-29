@@ -10,7 +10,6 @@ blaze@2.1.2
 blaze-tools@1.0.3
 boilerplate-generator@1.0.3
 callback-hook@1.0.3
-chart:chart@1.0.1-beta.4
 check@1.0.5
 dburles:mongo-collection-instances@0.3.3
 ddp@1.1.0
@@ -39,6 +38,7 @@ launch-screen@1.0.2
 livedata@1.0.13
 localstorage@1.0.3
 logging@1.0.7
+maazalik:highcharts@0.2.4
 matb33:collection-hooks@0.7.13
 meteor@1.1.6
 meteor-platform@1.2.2
