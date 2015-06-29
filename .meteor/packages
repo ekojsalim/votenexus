@@ -19,3 +19,7 @@ materialize:materialize
 jquery
 multiply:iron-router-progress
 useraccounts:materialize
+accounts-password
+accounts-google
+accounts-twitter
+accounts-github
