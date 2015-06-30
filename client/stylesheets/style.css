@@ -1,7 +1,37 @@
+h3 {
+  margin: 0;
+}
+
 .dash-card {
   color:white;
 }
 
+.pollt {
+  cursor:pointer;
+}
+
+.poll-card {
+  height:auto;
+}
+
+.action-thing {
+  margin-bottom:0;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+.icon {
+  vertical-align: middle;
+}
+
+.fab {
+  position:fixed;
+  z-index:99999;
+}
 
 body {
   display: flex;

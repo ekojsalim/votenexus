@@ -1,3 +1,44 @@
 <template name="pollmg">
-	
+	<div class="container">
+		<div class="user-polls">
+			<div class="row valign-wrapper">
+				<div class="col s12 m10">
+					<h3 class="teal-text">Your Polls</h3>
+				</div>
+				<div class="col s12 m2 center-align">
+ 					<a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">add</i></a>
+				</div>
+			</div>
+			<div class="divider"></div>
+			{{#each polls}}
+				<div class="row">
+					<div class="col s12">
+						<div class="card poll-card">
+							<div class="card-content dash-card hoverable valign-wrapper pollt teal">
+								<i class="medium material-icons">assessment</i>
+								<h5>{{title}}</h5>							
+							</div>
+							<div class="card-action">
+								<div class="valign-wrapper row action-thing">
+									<div class="col s9">
+										<a class="btn-floating red"><i class="material-icons">mode_edit</i></a>
+										<a class="btn-floating green"><i class="material-icons">insert_chart</i></a>
+										<a class="btn-floating blue"><i class="material-icons">delete</i></a>
+									</div>
+									<div class="col s3">
+									<span>created {{date}}</span>
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+			{{else}}
+			<div class="container center-align">
+				<p>You have no polls, please create one :)</p>
+				<a class="waves-effect waves-light btn"><i class="large material-icons right">mode_edit</i>Create a new poll</a>
+			</div>
+			{{/each}}
+		</div>
+	</div>
 </template>
