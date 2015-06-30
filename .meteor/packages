@@ -23,3 +23,5 @@ accounts-password
 accounts-google
 accounts-twitter
 accounts-github
+service-configuration
+accounts-ui

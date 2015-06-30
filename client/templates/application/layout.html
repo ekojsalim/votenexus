@@ -1,23 +1,30 @@
 <template name="layout">
-	<div class="navbar-fixed">
+	<div class="navbar-fixed" id="navbar">
 		<nav class="white" role="navigation">
 			<div class="nav-wrapper container">
-				<a id="logo-container" href="#" class="brand-logo">VoteNexus</a>
+				<a id="logo-container" href="/" class="brand-logo">VoteNexus</a>
 				<ul class="right hide-on-med-and-down">
+					{{#if currentUser}}
+					<li><a href="/dashboard">Dashboard</a></li>
+					{{/if}}
+					<li><a href="">All Polls</a></li>
 					<li><a href="#">API</a></li>
-					<li><a href="#">Sign Up/Log In</a></li>
+					{{> atNavButton}}
 				</ul>
 
 				<ul id="nav-mobile" class="side-nav">
+					<li><a href="/dashboard">Dashboard</a></li>
+					<li><a href="">All Polls</a></li>
 					<li><a href="#">API</a></li>
-					<li><a href="#">Sign Up/Log In</a></li>
+					{{> atNavButton}}
 				</ul>
 				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 			</div>
 		</nav>
 	</div>
-
-	{{> yield}}
+	<main>
+		{{> yield}}
+	</main>
 	<footer class="page-footer teal">
 		<div class="footer-copyright">
 			<div class="container">

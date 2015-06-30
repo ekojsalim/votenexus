@@ -1,10 +1,30 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+
+
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family:'Roboto';
+}
+
+main {
+  flex: 1 0 auto;
+  margin-top:50px;
+}
+
+
+ul li {
+  margin-right:5px;
+}
+
+.at-form {
+  text-align:center;
+}
+.at-pwd-link {
+  text-align:center;
+}
 
 nav ul a,
 nav .brand-logo {
@@ -20,6 +40,7 @@ p {
 }
 
 .parallax-container {
+  margin-top:-50px;
   min-height: 380px;
   line-height: 0;
   height: auto;
@@ -37,11 +58,23 @@ p {
   #index-banner .section {
     top: 10%;
   }
+  main {
+    margin-top:0;
+  }
+  .parallax-container {
+    margin-top:none;
+  }
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+  main {
+    margin-top:0;
+  }
+  .parallax-container {
+    margin-top:none;
   }
 }
 
@@ -59,3 +92,4 @@ footer.page-footer {
 #iron-router-progress {
   background-color:#add8e6;
 }
+

@@ -8,7 +8,11 @@
 					<h5 class="header col s12 light">Easily create polls</h5>
 				</div>
 				<div class="row center">
-					<a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Sign Up</a>
+					{{#if currentUser}}
+					<a href="/dashboard" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Dashboard</a>
+					{{else}}
+					<a href="/sign-up" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Sign Up</a>
+					{{/if}}
 				</div>
 				<br><br>
 			</div>
