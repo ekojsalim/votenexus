@@ -1,3 +1,35 @@
 <template name="dashboard">
-	<h1>Welcome {{name}}</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m8">
+				<a href="/pollmg">
+					<div class="card-panel green center-align dash-card">
+						<i class="large material-icons">assessment</i>
+						<p>Poll Management</p>
+					</div>
+				</a>
+			</div>
+			<div class="col s12 m4">
+				<a href="/userset">
+					<div class="card-panel orange darken-2 center-align dash-card">
+						<i class="large material-icons">settings</i>
+						<p>User Settings</p>
+					</div>
+				</a>
+			</div>					
+		</div>
+		<div class="row">
+			<div class="col s12 m4">
+				<div class="card teal">
+					<div class="card-header">
+						<p class="card-title center-align">Polls view count</p>
+					</div>
+					<div class="card-content center-align white">
+						<h1 class="view-count">0</h1>
+						<h4>views</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
