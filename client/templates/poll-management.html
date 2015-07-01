@@ -20,12 +20,12 @@
 							</div>
 							<div class="card-action">
 								<div class="valign-wrapper row action-thing">
-									<div class="col s9">
+									<div class="col s8 m9">
 										<a class="btn-floating red"><i class="material-icons">mode_edit</i></a>
-										<a class="btn-floating green"><i class="material-icons">insert_chart</i></a>
-										<a class="btn-floating blue"><i class="material-icons">delete</i></a>
+										<a class="btn-floating green" href="{{pathFor 'pollStats'}}"><i class="material-icons">insert_chart</i></a>
+										<a class="btn-floating blue delete"><i class="material-icons">delete</i></a>
 									</div>
-									<div class="col s3">
+									<div class="col s4 m3">
 									<span>created {{date}}</span>
 									</div>
 								</div>								
@@ -40,5 +40,17 @@
 			</div>
 			{{/each}}
 		</div>
+	</div>
+
+	<!--Modal-->
+	<div id="modal1" class="modal">
+	<div class="modal-content">
+		<h4>Are you sure?</h4>
+		<p>This will permanently remove your poll</p>
+	</div> 
+	<div class="modal-footer">
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="agree">Yes</a>
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="disagree">No</a>
+	</div>
 	</div>
 </template>

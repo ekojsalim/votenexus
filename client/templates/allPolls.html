@@ -1,3 +1,20 @@
 <template name="allPolls">
-	
+	<div class="container">
+		<div class="row">
+			{{#each polls}}
+				<div class="col s12 m3">
+					<div class="card blue-grey darken-1 hoverable">
+						<a href="{{pathFor 'pollPage'}}"><div class="card-content white-text">
+							<span class="card-title">{{title}}</span>
+							<p>{{description}}</p>
+						</div></a>
+						<div class="card-action">
+							<a href="{{pathFor 'pollStats'}}"><i class="small material-icons">insert_chart</i></a>
+							<a class="valign-wrapper right icon-view"><i class="small material-icons">pageview</i><span class="hits-number">{{hits}}</span></a>
+						</div>
+					</div>
+				</div>
+			{{/each}}
+		</div>
+	</div>
 </template>

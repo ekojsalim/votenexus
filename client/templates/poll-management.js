@@ -6,3 +6,18 @@ Template.pollmg.helpers({
 		return moment(this.createdAt).fromNow();
 	}
 });
+
+Template.pollmg.events({
+	"click .delete": function() {
+		Session.set("deleteId", this._id);
+		$("#modal1").openModal();
+	},
+	"click #agree": function() {
+		Polls.remove({_id: Session.get("deleteId")});
+		Session.set("deleteId", null);
+		Materialize.toast("Poll removed!", 4000);
+	},
+	"click #disagree": function() {
+		Session.set("deleteId", null);
+	}
+});

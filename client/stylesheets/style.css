@@ -2,9 +2,20 @@ h3 {
   margin: 0;
 }
 
+.hits-number {
+  margin-left: 5px;
+}
+
 .dash-card {
   color:white;
 }
+
+.icon-view {
+  margin-top:0;
+  margin-bottom:10px;
+}
+
+
 
 .pollt {
   cursor:pointer;
@@ -93,7 +104,7 @@ p {
     margin-top:0;
   }
   .parallax-container {
-    margin-top:none;
+    margin-top:0;
   }
 }
 
@@ -105,7 +116,7 @@ p {
     margin-top:0;
   }
   .parallax-container {
-    margin-top:none;
+    margin-top:0;
   }
 }
 
