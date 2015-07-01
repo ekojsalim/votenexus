@@ -6,7 +6,7 @@
 					<h3 class="teal-text">Your Polls</h3>
 				</div>
 				<div class="col s12 m2 center-align">
- 					<a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">add</i></a>
+ 					<a class="btn-floating btn-large waves-effect waves-light" href="/poll/new"><i class="material-icons">add</i></a>
 				</div>
 			</div>
 			<div class="divider"></div>
@@ -36,7 +36,7 @@
 			{{else}}
 			<div class="container center-align">
 				<p>You have no polls, please create one :)</p>
-				<a class="waves-effect waves-light btn"><i class="large material-icons right">mode_edit</i>Create a new poll</a>
+				<a class="waves-effect waves-light btn" href="/poll/new"><i class="large material-icons right">mode_edit</i>Create a new poll</a>
 			</div>
 			{{/each}}
 		</div>
