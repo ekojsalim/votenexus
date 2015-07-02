@@ -7,9 +7,7 @@
 meteor-platform
 iron:router
 underscore
-email
 aldeed:collection2
-meteorhacks:kadira
 aldeed:autoform
 msavin:mongol
 momentjs:moment
@@ -27,3 +25,5 @@ service-configuration
 accounts-ui
 ongoworks:security
 ekojsalim:autoform-materialize
+simple:rest
+simple:json-routes
