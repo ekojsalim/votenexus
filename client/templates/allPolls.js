@@ -1,5 +1,9 @@
 Template.allPolls.helpers({
 	polls: function() {
-		return Polls.find();
+		return Polls.find({}, {
+			sort: {
+				createdAt: -1
+			}
+		});
 	}
 });

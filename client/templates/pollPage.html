@@ -1,3 +1,24 @@
 <template name="pollPage">
-	{{title}}
+	<div class="row">
+		<div class="col offset-m3 s12 m6">
+			<div class="container">
+				<div class="card teal poll-card">
+				{{vote}}
+					<div class="center">
+						<h1 class="card-title center-align">{{title}}</h1>
+						{{#if showAuthor}}
+						<p class="center-align white-text" style="margin-top:-20px;">by {{authorName}}</p>
+						{{/if}}
+					</div>
+					<div class="card-content white">
+						{{#each options}}
+							<div class="row center">
+								<a class="waves-effect waves-light center-align btn-large {{voted}} option-poll" style="width:200px;">{{optionName}}</a>
+							</div>
+						{{/each}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>		
 </template>

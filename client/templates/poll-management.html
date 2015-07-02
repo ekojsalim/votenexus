@@ -14,19 +14,22 @@
 				<div class="row">
 					<div class="col s12">
 						<div class="card poll-card">
-							<div class="card-content dash-card hoverable valign-wrapper pollt teal">
-								<i class="medium material-icons">assessment</i>
-								<h5>{{title}}</h5>							
-							</div>
+							<a href="{{pathFor 'pollPage'}}">
+								<div class="card-content dash-card hoverable valign-wrapper pollt teal">
+									<i class="medium material-icons">assessment</i>
+									<h5>{{title}}</h5>							
+								</div>
+							</a>
 							<div class="card-action">
 								<div class="valign-wrapper row action-thing">
 									<div class="col s8 m9">
 										<a class="btn-floating red"><i class="material-icons">mode_edit</i></a>
 										<a class="btn-floating green" href="{{pathFor 'pollStats'}}"><i class="material-icons">insert_chart</i></a>
+										<a class="btn-floating teal"><i class="material-icons url-button">link</i></a>
 										<a class="btn-floating blue delete"><i class="material-icons">delete</i></a>
 									</div>
 									<div class="col s4 m3">
-									<span>created {{date}}</span>
+										<span>created {{date}}</span>
 									</div>
 								</div>								
 							</div>
@@ -53,4 +56,15 @@
 		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="disagree">No</a>
 	</div>
 	</div>
+
+	<!--Another modal-->
+	  <div id="modalurl" class="modal">
+    <div class="modal-content">
+      <h4 class="center-align">Url</h4>
+      <textarea id="url"></textarea>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat center-align">Close</a>
+    </div>
+  </div>
 </template>

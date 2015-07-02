@@ -15,7 +15,6 @@ h3 {
   margin-bottom:10px;
 }
 
-
 .all-card-action {
   height:50px;
 }
@@ -36,6 +35,10 @@ h3 {
   margin-bottom:0;
 }
 
+.at-btn {
+  margin-bottom: 20px;
+}
+
 .centered {
   position: fixed;
   top: 50%;
@@ -52,14 +55,24 @@ h3 {
 }
 
 body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family:'Roboto';
 }
 
 main {
-  flex: 1 0 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   margin-top:50px;
   margin-bottom: 30px;
 }
@@ -142,4 +155,3 @@ footer.page-footer {
 #iron-router-progress {
   background-color:#add8e6;
 }
-

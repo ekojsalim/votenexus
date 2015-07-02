@@ -1,14 +1,15 @@
 <template name="newPoll">
 	<div class="container">
-		<div class="card">
+		<div class="card teal">
 			<div class="center">
-				<h1 class="card-title teal-text">New Poll</h1>
+				<h1 class="card-title white-text">New Poll</h1>
 			</div>
-			<div class="card-content">
+			<div class="card-content white">
 			  {{#autoForm collection="Polls" id="newPollForm" type="insert"}}
 			      {{> afQuickField name="title"}}
 			      {{> afQuickField name="description"}}
 	  		      {{> afQuickField name="isPublic"}}
+			      {{> afQuickField name="showAuthor"}}	  		      
 			      {{> afQuickField name="options"}}
 			    <button type="submit" class="btn btn-primary">Add Poll</button>
 			  {{/autoForm}}

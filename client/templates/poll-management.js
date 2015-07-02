@@ -19,5 +19,9 @@ Template.pollmg.events({
 	},
 	"click #disagree": function() {
 		Session.set("deleteId", null);
+	},
+	"click .url-button": function() {
+		$("#url").html("http://" + window.location.hostname + "/polls/" + this._id);
+		$("#modalurl").openModal();
 	}
 });
