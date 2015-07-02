@@ -6,6 +6,10 @@ h3 {
   margin-left: 5px;
 }
 
+.header {
+  color: #008080;
+}
+
 .dash-card {
   color:white;
 }
@@ -25,6 +29,10 @@ h3 {
 
 .pollt {
   cursor:pointer;
+}
+
+.edit-button-submit {
+  margin-top:30px;
 }
 
 .poll-card {

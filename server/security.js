@@ -26,3 +26,4 @@ Security.defineMethod("ifHitAndVotesAreEmpty", {
 
 Polls.permit("insert").ifLoggedIn().ifIdMatch().ifHitAndVotesAreEmpty().apply();
 Polls.permit("remove").ifIsOwner().apply();
+Polls.permit("update").ifLoggedIn().ifIsOwner().exceptProps(["options", "createdAt", "voters", "hits", "ownerId"]).apply();

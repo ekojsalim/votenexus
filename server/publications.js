@@ -1,5 +1,5 @@
-Meteor.publish("allPolls", function() {
-	return Polls.find({isPublic: true});
+Meteor.publish("allPolls", function(option) {
+	return Polls.find({isPublic: true}, option);
 });
 
 Meteor.publish("userPolls", function() {

@@ -1,6 +1,6 @@
 Template.pollPage.helpers({
 	voted: function() {
-		if(Polls.find().fetch()[0].voters.indexOf(Meteor.user()._id) > -1) {
+		if(!Meteor.user() || Polls.find().fetch()[0].voters.indexOf(Meteor.user()._id) > -1) {
 			return "disabled";
 		}
 	}

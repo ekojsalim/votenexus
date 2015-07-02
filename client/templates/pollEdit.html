@@ -1,3 +1,18 @@
 <template name="pollEdit">
-	
+	<div class="container">
+		<div class="card teal">
+			<div class="center">
+				<h1 class="card-title white-text">Edit poll</h1>
+			</div>
+			<div class="card-content white">
+			  {{#autoForm collection="Polls" doc=this id="editPollForm" type="update"}}
+			      {{> afQuickField name="title" value=title}}
+			      {{> afQuickField name="description" value=description}}
+	  		      {{> afQuickField name="isPublic" value=isPublic}}
+			      {{> afQuickField name="showAuthor" value=showAuthor}}	  		      
+			    <button type="submit" class="btn btn-primary edit-button-submit">Submit changes</button>
+			  {{/autoForm}}
+		  	</div>
+		</div>  
+	</div>
 </template>

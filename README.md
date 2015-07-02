@@ -1,0 +1,1 @@
+Voting app built with Meteor JS for Freecodecamp Basejump.
